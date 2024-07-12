@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 using System.Data;
 using Testing.Models;
 
@@ -22,5 +23,6 @@ namespace Testing.Models
         public int CategoryID { get; set; }
         public int OnSale { get; set; }
         public int StockLevel { get; set; }
+        public IEnumerable<Category> Categories { get; set; }
     }
 }
