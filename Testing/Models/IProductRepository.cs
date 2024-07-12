@@ -9,5 +9,6 @@ namespace Testing.Models
     {
         public IEnumerable<Product> GetAllProducts();
         Product GetProduct(int id);
+        void UpdateProduct(Product product);
     }
 }
