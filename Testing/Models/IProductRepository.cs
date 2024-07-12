@@ -7,6 +7,6 @@ namespace Testing.Models
 {
     public interface IProductRepository
     {
-        public IEnumerable<Microsoft.Build.Tasks.Deployment.Bootstrapper.Product> GetAllProducts();
+        public IEnumerable<Product> GetAllProducts();
     }
 }

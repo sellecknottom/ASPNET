@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -16,9 +15,9 @@ namespace Testing.Models
             _conn = conn;
         }
 
-        public IEnumerable<Microsoft.Build.Tasks.Deployment.Bootstrapper.Product> GetAllProducts()
+        public IEnumerable<Product> GetAllProducts()
         {
-            return _conn.Query<Microsoft.Build.Tasks.Deployment.Bootstrapper.Product>("SELECT * FROM PRODUCTS;");
+            return _conn.Query<Product>("SELECT * FROM PRODUCTS;");
         }
     }
 }
